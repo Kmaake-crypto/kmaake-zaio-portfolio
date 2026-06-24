@@ -1,0 +1,163 @@
+/* ── CSS Variables (Light Mode) ── */
+:root {
+  --clr-bg:        #f4f6fb;
+  --clr-surface:   #ffffff;
+  --clr-navy:      #0d1b2a;
+  --clr-navy-mid:  #1a2e45;
+  --clr-gold:      #c9a84c;
+  --clr-gold-lt:   #e8d5a3;
+  --clr-text:      #1a1a2e;
+  --clr-muted:     #5c677d;
+  --clr-border:    #e2e8f0;
+  --clr-footer-bg: #0d1b2a;
+  --clr-footer-tx: #a0aec0;
+
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-body:    'Inter', system-ui, sans-serif;
+
+  --radius-card: 1.25rem;
+  --shadow-card: 0 4px 24px rgba(13, 27, 42, 0.08);
+  --shadow-hover: 0 12px 40px rgba(13, 27, 42, 0.16);
+  --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Dark Mode ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-bg:        #0a0f1a;
+    --clr-surface:   #111827;
+    --clr-navy-mid:  #1e2a3a;
+    --clr-gold:      #e8c96b;
+    --clr-gold-lt:   #3a2e12;
+    --clr-text:      #f0f4f8;
+    --clr-muted:     #8fa3b8;
+    --clr-border:    #1e2a3a;
+    --clr-footer-bg: #060c15;
+    --clr-footer-tx: #8fa3b8;
+    --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
+    --shadow-hover: 0 12px 40px rgba(0,0,0,0.6);
+  }
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+
+body {
+  font-family: var(--ff-body);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+
+.py-6 { padding-top: 5rem; padding-bottom: 5rem; }
+.mb-6 { margin-bottom: 3rem; }
+.z-1  { z-index: 1; }
+
+/* ── Skip Link ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--clr-gold);
+  color: var(--clr-navy);
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
+/* ── Focus & Motion ── */
+:focus-visible {
+  outline: 2px solid var(--clr-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ── Shared Section Labels & Headings ── */
+.section-eyebrow-label {
+  display: inline-block;
+  background: var(--clr-gold-lt);
+  color: var(--clr-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.35rem 1rem;
+  border-radius: 50rem;
+}
+@media (prefers-color-scheme: dark) {
+  .section-eyebrow-label { background: rgba(201,168,76,0.15); }
+}
+
+.section-heading {
+  font-family: var(--ff-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--clr-text);
+  line-height: 1.2;
+}
+.section-sub {
+  color: var(--clr-muted);
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Shared Buttons ── */
+.btn-primary-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-gold);
+  color: #0d1b2a !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 50rem;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.btn-primary-custom:hover {
+  background: #e0b85a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(201,168,76,0.3);
+  color: #0d1b2a !important;
+}
+
+.btn-outline-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--clr-gold) !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 2px solid var(--clr-gold);
+  border-radius: 50rem;
+  padding: 0.55rem 1.35rem;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+.btn-outline-custom:hover {
+  background: var(--clr-gold);
+  color: #0d1b2a !important;
+  transform: translateY(-1px);
+}
