@@ -14,371 +14,419 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Bootstrap 5 JS Bundle (required for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
 
-  <!-- sections go here -->
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-<!-- SKIP LINK -->
+<!-- Skip to main content link -->
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- NAVBAR -->
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Primary navigation">
-    <div class="container">
-      <a class="navbar-brand" href="#hero">
-        <span class="brand-km">KM</span><span class="brand-dot">.</span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navMenu"
-        aria-controls="navMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Primary navigation">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">
+      <span class="brand-km">K.M Solutions</span>
+      <span class="brand-dot">.</span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>
 
 <main id="main-content">
-  <!-- sections go here -->
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center" aria-label="Hero">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content position-relative z-1">
+      <p class="hero-eyebrow">Welcome to my portfolio</p>
+      <h1 class="hero-heading">I am <span class="hero-name">Koketso Maake</span>.</h1>
+      <p class="hero-sub">Full Stack Web Developer Trainee</p>
+      <div class="hero-divider" aria-hidden="true"></div>
+      <a href="#projects" class="btn btn-hero">
+        View My Work <i class="bi bi-arrow-down-right ms-1" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about" class="about-section py-6" aria-label="About Me">
+    <div class="container">
+      <div class="about-card card shadow-sm rounded-4 overflow-hidden">
+        <div class="row g-0">
+
+          <!-- Left column -->
+          <div class="col-lg-4 about-left d-flex flex-column align-items-center p-5">
+            <div class="about-avatar-wrap mb-4">
+              <img
+                src="assets/images/1764868351486.jpg"
+                alt="Profile photo of Koketso Maake"
+                class="about-avatar rounded-circle"
+                width="160"
+                height="160"
+              />
+            </div>
+            <h2 class="about-name mb-1">Koketso Maake</h2>
+            <p class="about-role mb-4">Full Stack Developer Trainee</p>
+
+            <ul class="about-contacts list-unstyled w-100">
+              <li>
+                <i class="bi bi-person-fill" aria-hidden="true"></i>
+                <span><strong>Name:</strong> Koketso Maake</span>
+              </li>
+              <li>
+                <i class="bi bi-briefcase-fill" aria-hidden="true"></i>
+                <span><strong>Profile:</strong> Web Developer</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                <span><strong>Phone:</strong> +27 61 636 8479</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                <span><strong>Email:</strong> koketsomaake295@gmail.com</span>
+              </li>
+            </ul>
+
+            <div class="skills-wrap mt-4 w-100">
+              <p class="skills-label mb-2">Tech Stack</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge">HTML5</span>
+                <span class="badge skill-badge">CSS3</span>
+                <span class="badge skill-badge">JavaScript</span>
+                <span class="badge skill-badge">Bootstrap 5</span>
+                <span class="badge skill-badge">Responsive Design</span>
+                <span class="badge skill-badge">Git</span>
+                <span class="badge skill-badge">GitHub</span>
+                <span class="badge skill-badge">VS Code</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div class="col-lg-8 about-right p-5 d-flex flex-column justify-content-center">
+            <div class="section-eyebrow-label mb-3">
+              <span>About Me</span>
+            </div>
+            <h3 class="about-heading mb-4">Turning ideas into<br />digital experiences.</h3>
+            <p class="about-bio">
+              I'm Koketso Maake, a driven Full Stack Web Developer Trainee based in South Africa with a passion for building clean, functional, and visually engaging websites. Currently sharpening my skills across HTML, CSS, JavaScript, and Bootstrap 5, I thrive on transforming creative ideas into real, working web experiences. My journey in tech is fuelled by curiosity and a genuine love for problem-solving whether it's crafting a pixel perfect layout or debugging logic until it clicks. I approach every project as an opportunity to grow, collaborate, and deliver work that makes a real impact.
+            </p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-primary-custom me-3">
+                Hire Me <i class="bi bi-send ms-1" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom">
+                GitHub <i class="bi bi-github ms-1" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects-section py-6" aria-label="Projects">
+    <div class="container">
+      <div class="text-center mb-6">
+        <div class="section-eyebrow-label mb-3 d-inline-block"><span>My Work</span></div>
+        <h2 class="section-heading">Featured Projects</h2>
+        <p class="section-sub">A selection of things I've designed and built.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Tesla Clone -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&q=80"
+                class="card-img-top" alt="Tesla website clone project" loading="lazy" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="project-tag mb-2">Clone Project</span>
+              <h4 class="card-title">Tesla</h4>
+              <p class="card-subtitle text-muted mb-4">Built with HTML and CSS</p>
+              <div class="mt-auto d-flex gap-2 card-btn-row">
+                <a href="https://koketso-tesla-assignment.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Tesla project">view website</a>
+                <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-custom btn-sm px-3" aria-label="Tesla source code">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Netflix Clone -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=600&q=80"
+                class="card-img-top" alt="Netflix website clone project" loading="lazy" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="project-tag mb-2">Clone Project</span>
+              <h4 class="card-title">Netflix</h4>
+              <p class="card-subtitle text-muted mb-4">Built with HTML and CSS</p>
+              <div class="mt-auto d-flex gap-2 card-btn-row">
+                 <a href="https://koketsosite.netlify.app//" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Netflix project">view website</a>
+                <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-custom btn-sm px-3" aria-label="Netflix source code">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- YouTube Clone -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-img-wrap">
+              <img src="assets/images/Screenshot 2026-06-26 114907.png"
+                class="card-img-top" alt="YouTube website clone project" loading="lazy" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="project-tag mb-2">Clone Project</span>
+              <h4 class="card-title">YouTube</h4>
+              <p class="card-subtitle text-muted mb-4">Built with HTML and CSS</p>
+              <div class="mt-auto d-flex gap-2 card-btn-row">
+                           <a href="https://koketsoyoutubecloneassignent.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Youtube Project">view website</a>
+                <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-custom btn-sm px-3" aria-label="YouTube source code">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Graphic Design Solutions Portfolio-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-img-wrap">
+              <img src="assets/images/myPhoto.png"
+                class="card-img-top" alt="Portfolio project" loading="lazy" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="project-tag mb-2">Full-stack web-dev Project</span>
+              <h4 class="card-title">Graphic Design Solutions Portfolio</h4>
+              <p class="card-subtitle text-muted mb-4">Built with HTML & CSS</p>
+              <div class="mt-auto d-flex gap-2 card-btn-row">
+                     <a href="https://koketsoyoutubecloneassignent.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Netflix project">view website</a>
+                <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-custom btn-sm px-3" aria-label="PORTFOLIO Dashboard source code">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- UI-screenshot-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-img-wrap">
+              <img src="assets/images/Screenshot 2026-06-26 111956.png"
+                class="card-img-top" alt="UI screenshot project" loading="lazy" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="project-tag mb-2">UI Design</span>
+              <h4 class="card-title">UI Screenshot</h4>
+              <p class="card-subtitle text-muted mb-4">Built with HTML&CSS</p>
+              <div class="mt-auto d-flex gap-2 card-btn-row">
+                <a href="https://koketso-ui-screenshot.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Netflix project">view website</a>
+                <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-custom btn-sm px-3" aria-label="UI screenshot source code">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- to-do List -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-img-wrap">
+              <img src="assets/images/Screenshot 2026-06-26 112723.png"
+                class="card-img-top" alt="Interactive To-do-List project" loading="lazy" />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="project-tag mb-2">To-do List</span>
+              <h4 class="card-title">To-do List Project</h4>
+              <p class="card-subtitle text-muted mb-4">Built with HTML, CSS & JavaScript</p>
+              <div class="mt-auto d-flex gap-2 card-btn-row">
+                <a href="https://kmaake-crypto.github.io/MY-TO-DO-LIST/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View To-do List App">view website</a>
+                <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-custom btn-sm px-3" aria-label="To-do List source code">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section py-6" aria-label="Contact">
+    <div class="container">
+
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <div class="section-eyebrow-label mb-3 d-inline-block">
+          <span>Get In Touch</span>
+        </div>
+        <h2 class="section-heading">Let's Connect</h2>
+        <p class="section-sub">
+          Have a project in mind or simply want to connect? Feel free to send me a message.
+        </p>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-row d-flex justify-content-center gap-4 mb-5">
+        <a href="https://www.instagram.com/koketso_graced/"
+           target="_blank"
+           class="social-icon"
+           aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://github.com/Kmaake-crypto"
+           target="_blank"
+           class="social-icon"
+           aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/koketso-maake-991540334"
+           target="_blank"
+           class="social-icon"
+           aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+
+          <form class="contact-form-card card shadow-sm rounded-4 p-5">
+
+            <div class="mb-4">
+              <label for="email" class="form-label">
+                Email Address
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="you@example.com"
+                required>
+            </div>
+
+            <div class="mb-4">
+              <label for="name" class="form-label">
+                Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your full name"
+                required>
+            </div>
+
+            <div class="mb-4">
+              <label for="subject" class="form-label">
+                Subject
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+                required>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label">
+                Message
+              </label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-custom w-100 py-3">
+              Send Message
+              <i class="bi bi-send ms-2"></i>
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BONUS: Details/Summary element (required by assignment) -->
+  <section class="py-4" style="background: var(--clr-bg);">
+    <div class="container text-center">
+      <details style="display: inline-block; text-align: left; max-width: 600px; margin: 0 auto;">
+        <summary style="cursor: pointer; font-weight: 600; color: var(--clr-gold); padding: 1rem;">
+           Learn more about my journey
+        </summary>
+        <div style="padding: 1rem 1.5rem; background: var(--clr-surface); border-radius: 8px; border: 1px solid var(--clr-border); margin-top: 0.5rem; color: var(--clr-text);">
+          <p>I'm currently enrolled in a Full Stack Web Development program, building real-world projects and sharpening my skills daily. My goal is to become a versatile developer who can bring ideas to life through clean, efficient code.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
 </main>
-<script>
-  // Active nav + navbar shrink on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + entry.target.id) {
-            link.classList.add('active');
-          }
-        });
-      }
-    });
-  }, { threshold: 0.4 });
-
-  sections.forEach(section => observer.observe(section));
-
-  window.addEventListener('scroll', () => {
-    document.getElementById('mainNav').classList.toggle('nav-scrolled', window.scrollY > 60);
-  });
-</script>
-<!-- HERO -->
-<section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center" aria-label="Hero">
-  <div class="hero-overlay" aria-hidden="true"></div>
-  <div class="hero-content position-relative z-1">
-    <p class="hero-eyebrow">Welcome to my portfolio</p>
-    <h1 class="hero-heading">I am <span class="hero-name">Koketso Maake</span>.</h1>
-    <p class="hero-sub">Full Stack Web Developer Trainee</p>
-    <div class="hero-divider" aria-hidden="true"></div>
-    <a href="#projects" class="btn btn-hero">
-      View My Work <i class="bi bi-arrow-down-right ms-1" aria-hidden="true"></i>
-    </a>
+<!-- FOOTER -->
+<footer class="site-footer py-4" aria-label="Site footer">
+  <div class="container text-center">
+    <p class="footer-text mb-0">
+      Developed by <strong>Koketso Maake</strong> using Bootstrap, for portfolio purposes.
+    </p>
   </div>
-</section>
-<!-- ABOUT ME -->
-<section id="about" class="about-section py-6" aria-label="About Me">
-  <div class="container">
-    <div class="about-card card shadow-sm rounded-4 overflow-hidden">
-      <div class="row g-0">
+</footer>
 
-        <!-- Left column -->
-        <div class="col-lg-4 about-left d-flex flex-column align-items-center p-5">
-          <div class="about-avatar-wrap mb-4">
-            <img
-              src="https://ui-avatars.com/api/?name=Koketso+Maake&size=200&background=1a1a2e&color=c9a84c&font-size=0.4&bold=true"
-              alt="Profile photo of Koketso Maake"
-              class="about-avatar rounded-circle"
-              width="160"
-              height="160"
-            />
-          </div>
-          <h2 class="about-name mb-1">Koketso Maake</h2>
-          <p class="about-role text-muted mb-4">Full Stack Developer Trainee</p>
+<!-- Bootstrap JS Bundle (already loaded at top) -->
 
-          <ul class="about-contacts list-unstyled w-100">
-            <li>
-              <i class="bi bi-person-fill" aria-hidden="true"></i>
-              <span><strong>Name:</strong> Koketso Maake</span>
-            </li>
-            <li>
-              <i class="bi bi-briefcase-fill" aria-hidden="true"></i>
-              <span><strong>Profile:</strong> Web Developer</span>
-            </li>
-            <li>
-              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
-              <span><strong>Phone:</strong> +27 61 636 8479</span>
-            </li>
-            <li>
-              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-              <span><strong>Email:</strong> koketsomaake295@gmail.com</span>
-            </li>
-          </ul>
-
-          <div class="skills-wrap mt-4 w-100">
-            <p class="skills-label mb-2">Tech Stack</p>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="badge skill-badge">HTML5</span>
-              <span class="badge skill-badge">CSS3</span>
-              <span class="badge skill-badge">JavaScript</span>
-              <span class="badge skill-badge">Bootstrap 5</span>
-              <span class="badge skill-badge">Responsive Design</span>
-              <span class="badge skill-badge">Git</span>
-              <span class="badge skill-badge">GitHub</span>
-              <span class="badge skill-badge">VS Code</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right column -->
-        <div class="col-lg-8 about-right p-5 d-flex flex-column justify-content-center">
-          <div class="section-eyebrow-label mb-3">
-            <span>About Me</span>
-          </div>
-          <h3 class="about-heading mb-4">Turning ideas into<br />digital experiences.</h3>
-          <p class="about-bio">
-            I'm Koketso Maake, a driven Full Stack Web Developer Trainee based in South Africa with a passion for building clean, functional, and visually engaging websites. Currently sharpening my skills across HTML, CSS, JavaScript, and Bootstrap 5, I thrive on transforming creative ideas into real, working web experiences. My journey in tech is fuelled by curiosity and a genuine love for problem-solving — whether it's crafting a pixel-perfect layout or debugging logic until it clicks. I approach every project as an opportunity to grow, collaborate, and deliver work that makes a real impact. I'm actively building my portfolio, taking on challenges, and looking forward to contributing meaningfully to the web development world.
-          </p>
-          <div class="mt-4">
-            <a href="#contact" class="btn btn-primary-custom me-3">
-              Hire Me <i class="bi bi-send ms-1" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom">
-              GitHub <i class="bi bi-github ms-1" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-<!-- PROJECTS -->
-<section id="projects" class="projects-section py-6" aria-label="Projects">
-  <div class="container">
-    <div class="text-center mb-6">
-      <div class="section-eyebrow-label mb-3 d-inline-block"><span>My Work</span></div>
-      <h2 class="section-heading">Featured Projects</h2>
-      <p class="section-sub">A selection of things I've designed and built.</p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- Tesla -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&q=80"
-              class="card-img-top" alt="Tesla website clone project" loading="lazy" />
-          </div>
-          <div class="card-body d-flex flex-column p-4">
-            <span class="project-tag mb-2">Clone Project</span>
-            <h4 class="card-title">Tesla</h4>
-            <p class="card-subtitle text-muted mb-4">Built with HTML and CSS</p>
-            <div class="mt-auto d-flex gap-2">
-              <a href="#" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Tesla project">View Website</a>
-              <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline-custom btn-sm px-3" aria-label="Tesla source code">
-                <i class="bi bi-code-slash" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Netflix -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=600&q=80"
-              class="card-img-top" alt="Netflix website clone project" loading="lazy" />
-          </div>
-          <div class="card-body d-flex flex-column p-4">
-            <span class="project-tag mb-2">Clone Project</span>
-            <h4 class="card-title">Netflix</h4>
-            <p class="card-subtitle text-muted mb-4">Built with HTML and CSS</p>
-            <div class="mt-auto d-flex gap-2">
-              <a href="#" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Netflix project">View Website</a>
-              <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline-custom btn-sm px-3" aria-label="Netflix source code">
-                <i class="bi bi-code-slash" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- YouTube -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&q=80"
-              class="card-img-top" alt="YouTube website clone project" loading="lazy" />
-          </div>
-          <div class="card-body d-flex flex-column p-4">
-            <span class="project-tag mb-2">Clone Project</span>
-            <h4 class="card-title">YouTube</h4>
-            <p class="card-subtitle text-muted mb-4">Built with HTML and CSS</p>
-            <div class="mt-auto d-flex gap-2">
-              <a href="#" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View YouTube project">View Website</a>
-              <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline-custom btn-sm px-3" aria-label="YouTube source code">
-                <i class="bi bi-code-slash" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Weather App -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1504608524841-42584120d693?w=600&q=80"
-              class="card-img-top" alt="Weather dashboard app project" loading="lazy" />
-          </div>
-          <div class="card-body d-flex flex-column p-4">
-            <span class="project-tag mb-2">Web App</span>
-            <h4 class="card-title">Weather Dashboard</h4>
-            <p class="card-subtitle text-muted mb-4">Built with HTML, CSS & JavaScript</p>
-            <div class="mt-auto d-flex gap-2">
-              <a href="#" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Weather Dashboard">View Website</a>
-              <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline-custom btn-sm px-3" aria-label="Weather Dashboard source code">
-                <i class="bi bi-code-slash" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Portfolio v1 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80"
-              class="card-img-top" alt="Personal portfolio website project" loading="lazy" />
-          </div>
-          <div class="card-body d-flex flex-column p-4">
-            <span class="project-tag mb-2">Portfolio</span>
-            <h4 class="card-title">Portfolio v1</h4>
-            <p class="card-subtitle text-muted mb-4">Built with HTML, CSS & Bootstrap</p>
-            <div class="mt-auto d-flex gap-2">
-              <a href="#" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Portfolio v1">View Website</a>
-              <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline-custom btn-sm px-3" aria-label="Portfolio source code">
-                <i class="bi bi-code-slash" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Quiz App -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <article class="project-card card h-100 shadow-sm rounded-4 overflow-hidden">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&q=80"
-              class="card-img-top" alt="Interactive quiz app project" loading="lazy" />
-          </div>
-          <div class="card-body d-flex flex-column p-4">
-            <span class="project-tag mb-2">Web App</span>
-            <h4 class="card-title">Quiz App</h4>
-            <p class="card-subtitle text-muted mb-4">Built with HTML, CSS & JavaScript</p>
-            <div class="mt-auto d-flex gap-2">
-              <a href="#" class="btn btn-primary-custom btn-sm flex-grow-1" aria-label="View Quiz App">View Website</a>
-              <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline-custom btn-sm px-3" aria-label="Quiz App source code">
-                <i class="bi bi-code-slash" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-    </div><!-- /row -->
-  </div>
-</section>
-<!-- CONTACT -->
-<section id="contact" class="contact-section py-6" aria-label="Contact">
-  <div class="container">
-    <div class="text-center mb-5">
-      <div class="section-eyebrow-label mb-3 d-inline-block"><span>Get In Touch</span></div>
-      <h2 class="section-heading">Let's connect</h2>
-      <p class="section-sub">Have a project in mind or just want to say hello? My inbox is always open.</p>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="social-row d-flex justify-content-center gap-4 mb-5" aria-label="Social media links">
-      <a href="https://www.instagram.com/koketso_graced/?hl=en" target="_blank" rel="noopener noreferrer"
-        class="social-icon" aria-label="Instagram profile">
-        <i class="bi bi-instagram" aria-hidden="true"></i>
-      </a>
-      <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener noreferrer"
-        class="social-icon" aria-label="GitHub profile">
-        <i class="bi bi-github" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/koketso-maake-991540334" target="_blank" rel="noopener noreferrer"
-        class="social-icon" aria-label="LinkedIn profile">
-        <i class="bi bi-linkedin" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.facebook.com/koketso.maake.2025" target="_blank" rel="noopener noreferrer"
-        class="social-icon" aria-label="Facebook profile">
-        <i class="bi bi-facebook" aria-hidden="true"></i>
-      </a>
-    </div>
-
-    <!-- Form -->
-    <div class="row justify-content-center">
-      <div class="col-lg-7">
-        <div class="contact-form-card card shadow-sm rounded-4 p-5">
-          <div class="mb-4">
-            <label for="emailInput" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="emailInput" name="email"
-              placeholder="you@example.com" required aria-required="true" />
-          </div>
-          <div class="mb-4">
-            <label for="nameInput" class="form-label">Name</label>
-            <input type="text" class="form-control" id="nameInput" name="name"
-              placeholder="Your full name" required aria-required="true" />
-          </div>
-          <div class="mb-4">
-            <label for="subjectInput" class="form-label">Subject</label>
-            <input type="text" class="form-control" id="subjectInput" name="subject"
-              placeholder="What's this about?" required aria-required="true" />
-          </div>
-          <div class="mb-4">
-            <label for="messageInput" class="form-label">Message</label>
-            <textarea class="form-control" id="messageInput" name="message" rows="5"
-              placeholder="Tell me about your project or idea..." required aria-required="true"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary-custom w-100 py-3">
-            Send Message <i class="bi bi-send ms-2" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+</body>
+</html>
