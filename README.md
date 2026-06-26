@@ -2,8 +2,6 @@
 Assignment project 
 # Koketso Maake | Full Stack Web Developer Portfolio
 
-[Portfolio Screenshot](assets/images/portfolio-screenshot.png)
-
 # Live Demo
 [View Live Portfolio](https://myzaioportfolio.netlify.app/)
 
